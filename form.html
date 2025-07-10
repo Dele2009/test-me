@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HTML FORMS</title>
+</head>
+<body>
+     <!-- html form tags -->
+      <!--
+
+      <form></form>
+      <fieldset></fieldset>
+      <legend></legend>
+      <label for=""></label>
+      <input type="text">
+      <select></select>
+      <option value=""></option>
+      <textarea></textarea>
+      <button></button> 
+
+      -->
+
+
+      <!-- Input types -->
+       <!--
+          * text - default type
+          - number
+          - email
+          - password
+          - checkbox
+          - radio
+          - file
+          - date
+          - time
+          - datetime-local 
+          - submit
+
+          extras
+          -range
+          -color
+          -tel
+          -
+       -->
+
+
+       <!-- Attributes for form element/tags -->
+        <!-- 
+          name
+          id
+          max
+          min
+          minlength
+          placeholder
+          required
+          readonly
+        -->
+
+
+     <form>
+          <fieldset>
+               <legend>Personal information</legend>
+
+
+               <label for="firstname">
+                    Firstname
+               </label>
+               <input type="text" id="firstname" name="firstname" required placeholder="Enter your firstname here" value="John" readonly><br><br>
+
+               <label for="phonenumber">
+                    Phone Number
+               </label>
+               <input type="number" id="phonenumber" name="phonenumber" required><br><br>
+
+               <label for="emailaddress">
+                    Email Address
+               </label>
+               <input type="email" name="emailaddress" id="emailaddress" required><br><br>
+
+               <label for="dateofbirth">
+                    Date of birth
+               </label>
+               <input type="date" name="dateofbirth" id="dateofbirth"><br><br>
+
+               <label for="worktime">
+                    Preferred work time
+               </label>
+               <input type="time" name="worktime" id="worktime"><br><br>
+
+               <label for="profilepic">
+                    Upload profile picture
+               </label>
+               <input type="file" name="profilepic" id="profilepic" multiple><br><br>
+
+               <label>
+                    Choose your profession
+               </label><br>
+               <input type="radio" name="profession" id="doctor"><label for="doctor">Doctor</label><br><br>
+               <input type="radio" name="profession" id="lawyer"><label for="lawyer">Lawyer</label><br><br>
+
+
+               <label>
+                    Choose your Hobbies
+               </label><br>
+               <input type="checkbox" name="hobbies" id="reading"><label for="reading">Reading</label><br><br>
+               <input type="checkbox" name="hobbies" id="cooking"><label for="cooking">Cooking</label><br><br>
+               <input type="checkbox" name="hobbies" id="dancing"><label for="dancing">Dancing</label><br><br>
+
+               <label for="country">
+                    Select your country
+               </label>
+               <select name="country" id="country">
+                    <option value="">----Choose----</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="togo">Togo</option>
+                    <option value="kenya">Kenya</option>
+               </select><br><br>
+
+
+               <label for="bio">
+                    Describe yourself
+               </label><br>
+               <textarea name="bio" id="bio" cols="40" rows="10"></textarea><br><br>
+
+
+
+               <button type="submit">
+                    Login
+               </button>
+          </fieldset>
+     </form>
+
+</body>
+</html>
